@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Bill Caculator</h1>
+    <form onsubmit="calculateTotalPrice();return false">
+      <table>
+        <tr>
+          <td>Product Name</td>
+          <td>
+            <input type="text" placeholder="Product Name" id="productName" required/>
+          </td>
+        </tr>
+        <tr>
+          <td>Product Price in Rs.</td>
+          <td>
+            <input type="number" placeholder="Product Price" id="price" required />
+          </td>
+        </tr>
+        <tr>
+          <td>Quantity</td>
+          <td>
+            <input
+              type="number"
+              placeholder="Enter quantity"
+              min="-1"
+              id="qty"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Total Price in Rs.</td>
+          <td><output id="totalprice" for="price qty"></output></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" id="submit"/>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <script type="text/javascript">
+      function calculateTotalPrice() {
+
+        var a=document.getElementById("price").value;
+        var b=document.getElementById("qty").value;
+        var c=document.getElementById("totalprice");
+        var result = a* b;
+        c.value=result;
+
+        
+      }
+      
+    </script>
+  </body>
+</html>
