@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>ARTICLES</h1>
+    </header>
+    <div class="container">
+      <h1>Here you go..</h1>
+      <textarea
+        name="feedback-textarea"
+        id="feedback"
+        onfocus="this.value=''; setbg('#e5fff3');"
+        onblur="setbg('white')"
+      >
+Enter your comment here...</textarea
+      >
+      
+    </div>
+    <input type="submit" id="addArticle" onclick="addArticle()"/>
+      <br><br>
+      <div id="result"></div>
+    <footer>
+      <p>copyright &COPY Shrey Kumar</p>
+    </footer>
+  </body>
+</html>

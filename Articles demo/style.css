@@ -1,0 +1,47 @@
+body{
+    padding: 0px;;
+}
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color:black;
+    color: white;
+    text-align: center;
+    
+}
+header h1{
+    color:white;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:black;
+    color: white;
+    text-align: center;
+}
+footer p{
+    padding:10px 0px;
+}
+.container{
+    position: relative;
+    margin: 20px 5px 20px 0px;
+    padding: 20px 0px;;
+    
+}
+textarea#feedback {
+	width: 600px;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
